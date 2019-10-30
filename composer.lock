@@ -4,24 +4,27 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ca676ce90972edbcda94878871a09b63",
+    "content-hash": "dad9a10b936e99217324a5e9c1ca4339",
     "packages": [
         {
             "name": "atk4/chart",
-            "version": "dev-master",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/atk4/chart.git",
-                "reference": "09119e36fd576b283c468ecca22854bfe4b2ea63"
+                "reference": "bfeab3ee712d2c77c54bcd322dcfbcde9b3ecdcc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/atk4/chart/zipball/09119e36fd576b283c468ecca22854bfe4b2ea63",
-                "reference": "09119e36fd576b283c468ecca22854bfe4b2ea63",
+                "url": "https://api.github.com/repos/atk4/chart/zipball/bfeab3ee712d2c77c54bcd322dcfbcde9b3ecdcc",
+                "reference": "bfeab3ee712d2c77c54bcd322dcfbcde9b3ecdcc",
                 "shasum": ""
             },
             "require": {
                 "atk4/ui": "dev-develop|*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "<6"
             },
             "type": "library",
             "autoload": {
@@ -49,7 +52,7 @@
                 "data",
                 "framework"
             ],
-            "time": "2019-02-26T00:51:23+00:00"
+            "time": "2019-10-30T10:33:07+00:00"
         },
         {
             "name": "atk4/core",
@@ -410,12 +413,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/log.git",
-                "reference": "bf73deb2b3b896a9d9c75f3f0d88185d2faa27e2"
+                "reference": "d477130b23d419404dbd4bfea1aa557b3236bbc7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/log/zipball/bf73deb2b3b896a9d9c75f3f0d88185d2faa27e2",
-                "reference": "bf73deb2b3b896a9d9c75f3f0d88185d2faa27e2",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/d477130b23d419404dbd4bfea1aa557b3236bbc7",
+                "reference": "d477130b23d419404dbd4bfea1aa557b3236bbc7",
                 "shasum": ""
             },
             "require": {
@@ -449,7 +452,7 @@
                 "psr",
                 "psr-3"
             ],
-            "time": "2019-10-25T08:06:51+00:00"
+            "time": "2019-10-30T09:18:31+00:00"
         }
     ],
     "packages-dev": [],
