@@ -7,7 +7,7 @@ class App extends \atk4\ui\App {
     {
         parent::__construct('Lapse - simple timesheets');
 
-        $this->dbConnect('mysql://root:root@localhost/lapse');
+        $this->dbConnect($_ENV['CLEARDB_DATABASE_URL'] ?: 'mysql://root:root@localhost/lapse');
 
 
         switch($scope) {
