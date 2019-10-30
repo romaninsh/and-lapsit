@@ -4,30 +4,85 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6a7cf93720d89c6cdf5c4a62e2585bf7",
+    "content-hash": "ca676ce90972edbcda94878871a09b63",
     "packages": [
         {
-            "name": "atk4/core",
-            "version": "1.3.10",
+            "name": "atk4/chart",
+            "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/atk4/core.git",
-                "reference": "f74ab9f8f8d3cbdac0aad40282703c69179e1d69"
+                "url": "https://github.com/atk4/chart.git",
+                "reference": "09119e36fd576b283c468ecca22854bfe4b2ea63"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/atk4/core/zipball/f74ab9f8f8d3cbdac0aad40282703c69179e1d69",
-                "reference": "f74ab9f8f8d3cbdac0aad40282703c69179e1d69",
+                "url": "https://api.github.com/repos/atk4/chart/zipball/09119e36fd576b283c468ecca22854bfe4b2ea63",
+                "reference": "09119e36fd576b283c468ecca22854bfe4b2ea63",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.6.0",
+                "atk4/ui": "dev-develop|*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "atk4\\chart\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Romans Malinovskis",
+                    "email": "romans@agiletoolkit.org",
+                    "homepage": "https://nearly.guru/"
+                }
+            ],
+            "description": "ChartJS for Agile UI",
+            "homepage": "http://agiletoolkit.org/",
+            "keywords": [
+                "Agile",
+                "chart",
+                "chartjs",
+                "data",
+                "framework"
+            ],
+            "time": "2019-02-26T00:51:23+00:00"
+        },
+        {
+            "name": "atk4/core",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/atk4/core.git",
+                "reference": "627972de06c003c6f5125992824dc15292d82fd8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/atk4/core/zipball/627972de06c003c6f5125992824dc15292d82fd8",
+                "reference": "627972de06c003c6f5125992824dc15292d82fd8",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": ">=7.2.0",
                 "psr/log": "~1.0"
             },
+            "replace": {
+                "atk4/core": "self.version"
+            },
             "require-dev": {
+                "atk4/data": "dev-develop",
                 "codeclimate/php-test-reporter": "*",
-                "phpunit/phpunit": "<6",
-                "satooshi/php-coveralls": "^1.0"
+                "phpunit/phpunit": "*",
+                "satooshi/php-coveralls": "^1.0",
+                "symfony/contracts": "^1.1",
+                "symfony/yaml": "~2.1|~3.0|~4.0"
+            },
+            "suggest": {
+                "symfony/yaml": "~2.1|~3.0|~4.0"
             },
             "type": "library",
             "autoload": {
@@ -54,29 +109,30 @@
                 "php",
                 "trains"
             ],
-            "time": "2019-02-04T13:37:55+00:00"
+            "time": "2019-10-17T17:24:57+00:00"
         },
         {
             "name": "atk4/data",
-            "version": "1.4.1",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/atk4/data.git",
-                "reference": "073dfb1d6c205f4f1a85759b46ba024a02887b1e"
+                "reference": "733274b64c301b919f636cc19827a74292db62d2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/atk4/data/zipball/073dfb1d6c205f4f1a85759b46ba024a02887b1e",
-                "reference": "073dfb1d6c205f4f1a85759b46ba024a02887b1e",
+                "url": "https://api.github.com/repos/atk4/data/zipball/733274b64c301b919f636cc19827a74292db62d2",
+                "reference": "733274b64c301b919f636cc19827a74292db62d2",
                 "shasum": ""
             },
             "require": {
-                "atk4/core": "^1.3",
-                "atk4/dsql": "^1.2",
-                "php": ">=7.0.0"
+                "atk4/core": "dev-develop",
+                "atk4/dsql": "dev-develop as 1.2.5",
+                "ext-intl": "*",
+                "php": ">=7.2.0"
             },
             "require-dev": {
-                "atk4/schema": "*",
+                "atk4/schema": "dev-develop",
                 "codeclimate/php-test-reporter": "*",
                 "phpunit/dbunit": ">=1.2",
                 "phpunit/phpcov": "*",
@@ -113,24 +169,24 @@
                 "query",
                 "sql"
             ],
-            "time": "2019-02-23T22:00:56+00:00"
+            "time": "2019-10-16T07:25:19+00:00"
         },
         {
             "name": "atk4/dsql",
-            "version": "1.2.6",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/atk4/dsql.git",
-                "reference": "82b39c73ef693a29d4e62fc826b4686125b298b9"
+                "reference": "25d117355a6b22ab8d5afe7f610a1b7a6685ce75"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/atk4/dsql/zipball/82b39c73ef693a29d4e62fc826b4686125b298b9",
-                "reference": "82b39c73ef693a29d4e62fc826b4686125b298b9",
+                "url": "https://api.github.com/repos/atk4/dsql/zipball/25d117355a6b22ab8d5afe7f610a1b7a6685ce75",
+                "reference": "25d117355a6b22ab8d5afe7f610a1b7a6685ce75",
                 "shasum": ""
             },
             "require": {
-                "atk4/core": "^1.3",
+                "atk4/core": "dev-develop",
                 "php": ">=5.6.0"
             },
             "require-dev": {
@@ -167,26 +223,141 @@
                 "orm",
                 "sql"
             ],
-            "time": "2019-02-04T13:45:00+00:00"
+            "time": "2019-08-22T17:39:16+00:00"
         },
         {
-            "name": "atk4/ui",
-            "version": "1.7.1",
+            "name": "atk4/mastercrud",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
-                "url": "https://github.com/atk4/ui.git",
-                "reference": "1ca8f16ab7e4a499e9e25690eb237ab4be82940c"
+                "url": "https://github.com/atk4/mastercrud.git",
+                "reference": "d839ddbd5f6e2333e4a288425d7ce6dfd51d0eea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/atk4/ui/zipball/1ca8f16ab7e4a499e9e25690eb237ab4be82940c",
-                "reference": "1ca8f16ab7e4a499e9e25690eb237ab4be82940c",
+                "url": "https://api.github.com/repos/atk4/mastercrud/zipball/d839ddbd5f6e2333e4a288425d7ce6dfd51d0eea",
+                "reference": "d839ddbd5f6e2333e4a288425d7ce6dfd51d0eea",
                 "shasum": ""
             },
             "require": {
-                "atk4/core": "<2",
-                "atk4/data": "<2",
-                "php": ">=5.6.0"
+                "atk4/ui": "dev-develop",
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "<6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "atk4\\mastercrud\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Romans Malinovskis",
+                    "email": "romans@agiletoolkit.org",
+                    "homepage": "https://nearly.guru/"
+                }
+            ],
+            "description": "Multi-level CRUD system component for ATK UI",
+            "homepage": "https://github.com/atk4/multicrud",
+            "keywords": [
+                "Agile",
+                "Reference",
+                "agile ui",
+                "atk4",
+                "crud",
+                "data",
+                "framework",
+                "multi",
+                "recursive"
+            ],
+            "time": "2019-07-10T11:24:14+00:00"
+        },
+        {
+            "name": "atk4/schema",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/atk4/schema.git",
+                "reference": "4a189ee459fde8cc89c7944c0cff922035f940ff"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/atk4/schema/zipball/4a189ee459fde8cc89c7944c0cff922035f940ff",
+                "reference": "4a189ee459fde8cc89c7944c0cff922035f940ff",
+                "shasum": ""
+            },
+            "require": {
+                "atk4/dsql": "dev-develop",
+                "php": ">=7.2.0"
+            },
+            "require-dev": {
+                "atk4/data": "dev-develop",
+                "atk4/ui": "dev-develop",
+                "codeclimate/php-test-reporter": "*",
+                "phpunit/dbunit": ">=1.2",
+                "phpunit/phpcov": "*",
+                "phpunit/phpunit": "<6"
+            },
+            "suggest": {
+                "atk4/data": "*",
+                "atk4/ui": "*",
+                "jdorn/sql-formatter": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "atk4\\schema\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Romans Malinovskis",
+                    "email": "romans@agiletoolkit.org",
+                    "homepage": "https://nearly.guru/"
+                }
+            ],
+            "description": "Agile Schema",
+            "homepage": "http://github.com/atk4/schema",
+            "keywords": [
+                "Agile",
+                "alter",
+                "data",
+                "framework",
+                "migration",
+                "schema",
+                "sql"
+            ],
+            "time": "2019-08-01T17:50:03+00:00"
+        },
+        {
+            "name": "atk4/ui",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/atk4/ui.git",
+                "reference": "ae36b63f5b98744cfab8a2397451cbbe88a7e172"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/atk4/ui/zipball/ae36b63f5b98744cfab8a2397451cbbe88a7e172",
+                "reference": "ae36b63f5b98744cfab8a2397451cbbe88a7e172",
+                "shasum": ""
+            },
+            "require": {
+                "atk4/core": "dev-develop",
+                "atk4/data": "dev-develop",
+                "ext-json": "*",
+                "php": ">=7.2.0"
             },
             "require-dev": {
                 "behat/behat": "^3.4",
@@ -194,8 +365,10 @@
                 "behat/mink-selenium2-driver": "^1.3",
                 "codeclimate/php-test-reporter": "*",
                 "fzaninotto/faker": "*",
+                "guzzlehttp/guzzle": "^6.3",
                 "phpunit/phpcov": "^3.0",
-                "phpunit/phpunit": "<6"
+                "phpunit/phpunit": "<6",
+                "symfony/process": "^4.3"
             },
             "type": "library",
             "autoload": {
@@ -229,11 +402,11 @@
                 "web",
                 "widget"
             ],
-            "time": "2019-06-12T01:56:02+00:00"
+            "time": "2019-10-29T20:24:06+00:00"
         },
         {
             "name": "psr/log",
-            "version": "1.1.1",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/log.git",
@@ -281,8 +454,13 @@
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "stable",
-    "stability-flags": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "atk4/ui": 20,
+        "atk4/schema": 20,
+        "atk4/mastercrud": 20,
+        "atk4/chart": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
